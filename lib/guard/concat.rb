@@ -10,6 +10,7 @@ module Guard
       opts[:watchers] = [] unless opts[:watchers]
       opts[:watchers] << ::Guard::Watcher.new(matcher_regex)
       super(opts)
+      start
     end
 
     def start
