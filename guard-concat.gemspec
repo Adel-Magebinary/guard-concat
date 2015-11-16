@@ -1,4 +1,4 @@
-require_relative "lib/guard/concat/version"
+require File.expand_path(File.join(File.dirname(__FILE__), 'lib/guard/concat/version'))
 
 Gem::Specification.new do |s|
   s.name         = "guard-concat"
